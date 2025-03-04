@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('default.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+    transition: background 0.5s ease-in-out;
+}
+
+.weather-app {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(140, 127, 45, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #f5a623;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #333;
+    margin-right: 5px;
+    outline: none;
+    background-color: #444;
+    color: #93c6e3;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #303f9f;
+    transform: scale(1.05);
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3f51b5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#day-name {
+    color: #f5a623;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#weather-info p {
+    margin: 5px 0;
+}
